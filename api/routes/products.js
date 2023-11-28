@@ -78,6 +78,19 @@ router.get('/:productId', (req, res, next) => {
     })
   }
 });
+// Delete using thenable/Promis  object
+router.delete('/:productId', (req, res, next) => {
+  const id = req.params.productId
+  Product.findByIdAndDelete(id) // returns deleted object
+    .then((doc) => {
+      if (doc) {
+        res.status(200).json({ message: doc })
+      } else { res.status(404).json({ message: "not valied Entry" }) }
+
+    }).catch((err) => res.status(404).json({ message: err }))
+
+});
+
 // router.delete('/:productId', async (req, res, next) => {
 //  const id = req.params.productId;
 //  const deletedDoc = await Product.findByIdAndDelete(id)
