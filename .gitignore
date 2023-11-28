@@ -1,0 +1,27 @@
+.vscode/
+build
+.tmp.drivedownload/
+.tmp.driveupload/
+node_modules
+*.logs
+docker-compose*.yaml
+Dockerfile
+Dockerfile*
+# Optional npm cache directory
+.npm
+# Optional eslint cache
+.eslintcache
+# dotenv environment variable files
+.env
+service-variables.env
+.dockerignore
+
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+npm-debug.log
+.nyc
+.DS_Store
+.ssh/
+

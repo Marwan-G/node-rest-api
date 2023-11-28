@@ -1,0 +1,21 @@
+{
+  "name": "node_restapi_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "node --inspect   server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "npm": "^10.2.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0"
+  }
+}
